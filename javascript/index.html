@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Learning Path</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">JS Learning Path</div>
-            <ul>
-                <li><a href="#basics">Cơ bản</a></li>
-                <li><a href="#intermediate">Trung cấp</a></li>
-                <li><a href="#advanced">Nâng cao</a></li>
-                <li><a href="#projects">Dự án</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h1>Học JavaScript từ Zero đến Hero</h1>
-            <p>Lộ trình học JavaScript toàn diện cho người mới bắt đầu</p>
-        </section>
-
-        <section id="basics" class="roadmap-section">
-            <h2>1. JavaScript Cơ bản</h2>
+    <canvas id="myCanvas"></canvas>
+    <h1 class="title">JavaScript zero to hero</h1>
+    <div>
+        <section class="roadmap-section">
+            <h2 class="category">1. JavaScript Cơ bản</h2>
             <div class="topics">
-                <div class="topic-card">
-                    <h3>Biến và Kiểu dữ liệu</h3>
+                <div class="topic-card" onclick="handleConvert1()">
+                    <div class="topic-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                            stroke="currentColor" class="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.745 3A23.933 23.933 0 0 0 3 12c0 3.183.62 6.22 1.745 9M19.5 3c.967 2.78 1.5 5.817 1.5 9s-.533 6.22-1.5 9M8.25 8.885l1.444-.89a.75.75 0 0 1 1.105.402l2.402 7.206a.75.75 0 0 0 1.104.401l1.445-.889m-8.25.75.213.09a1.687 1.687 0 0 0 2.062-.617l4.45-6.676a1.688 1.688 0 0 1 2.062-.618l.213.09" />
+                        </svg>
+
+                        <h3>Biến và Kiểu dữ liệu</h3>
+                    </div>
                     <ul>
                         <li>var, let, const</li>
                         <li>String, Number, Boolean</li>
                         <li>Array, Object</li>
                     </ul>
                 </div>
-                <div class="topic-card">
-                    <h3>Cấu trúc điều khiển</h3>
+                <div class="topic-card" onclick="handleConvert2()">
+                    <div class="topic-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+                        </svg>
+
+                        <h3>Cấu trúc điều khiển</h3>
+                    </div>
                     <ul>
                         <li>if/else</li>
                         <li>switch/case</li>
                         <li>Vòng lặp for, while</li>
                     </ul>
                 </div>
-                <div class="topic-card">
-                    <h3>Hàm (Functions)</h3>
+                <div class="topic-card" onclick="handleConvert3()">
+                    <div class="topic-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
+                        </svg>
+
+                        <h3>Hàm (Functions)</h3>
+                    </div>
                     <ul>
                         <li>Function Declaration</li>
                         <li>Function Expression</li>
@@ -54,7 +65,6 @@
                 </div>
             </div>
         </section>
-
         <section id="intermediate" class="roadmap-section">
             <h2>2. JavaScript Trung cấp</h2>
             <div class="topics">
@@ -84,7 +94,6 @@
                 </div>
             </div>
         </section>
-
         <section id="advanced" class="roadmap-section">
             <h2>3. JavaScript Nâng cao</h2>
             <div class="topics">
@@ -132,12 +141,9 @@
                 </div>
             </div>
         </section>
-    </main>
-
-    <footer>
-        <p>© 2025 JavaScript Learning Path. All rights reserved.</p>
-    </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>

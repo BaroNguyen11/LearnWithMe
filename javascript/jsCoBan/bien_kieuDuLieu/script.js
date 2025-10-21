@@ -107,12 +107,3 @@ function animate() {
 // Bắt đầu vòng lặp
 animate();
 
-function handleConvert1() {
-    window.location.href = "jsCoBan/bien_kieuDuLieu/index.html";
-}
-function handleConvert2() {
-    window.location.href = "jsCoBan/cauTrucDieuKhien/index.html";
-}
-function handleConvert3() {
-    window.location.href = "jsCoBan/ham/index.html";
-}
