@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../javascript/style.css">
+    <style>
+        .card-content{
+            border: 1px solid black;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        .card{
+            width: 300px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Chọn nơi mà bạn muốn học</h1>
-    <ul>
-        <li><a href="javascript/index.html">Trường học</a></li>
-        <li><a href="home.html">Nhà riêng</a></li>
-        <li><a href="library.html">Thư viện</a></li>
-        <li><a href="cafe.html">Quán cà phê</a></li>
+    <canvas id="myCanvas"></canvas>
+    <h1 style="text-align: center;">Chọn nơi mà bạn muốn học</h1>
+    <div class="card">
+        <div class="card-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="" width="100px" height="100px">
+            <a href="javascript/index.html">JavaScript</a>
+        </div>
+        <a href="home.html">Nhà riêng</a>
+        <a href="library.html">Thư viện</a>
+        <a href="cafe.html">Quán cà phê</a>
+    </div>
+
+    <script src="../javascript/script.js"></script>
 </body>
+
 </html>
